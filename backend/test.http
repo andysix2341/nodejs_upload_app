@@ -1,0 +1,14 @@
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/users
+
+###
+GET  http://localhost:3000/user/870c3355-04ea-4670-8a9c-9f466f8d17d0
+
+###
+# False id
+GET http://localhost:3000/user/2
+
+###
+DELETE http://localhost:3000/user/2 
