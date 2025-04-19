@@ -2,7 +2,7 @@ import multer from "multer"
 
 // change the path if you use this
 const storage = multer.diskStorage({
-    destination: "../../my-project/client/public/uploads",
+    destination: "../client/public/uploads", //make sure the path is in client, so client can display the image
     filename: (req, file, cb) => {
         const uniqueFileName = `${Date.now()}--${file.originalname}`
         cb(null, uniqueFileName)

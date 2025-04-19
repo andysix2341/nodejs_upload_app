@@ -29,9 +29,9 @@ export default function DisplayAllData() {
   if (status === "pending") return <div>Loading...</div>
   return (
     <>
-      <div className="display-all-data">DisplayAllData</div>
+      <Link to={`/register-page`} >go to register page</Link>
       {
-        <table>
+        <table style={ data.length === 0 ? {display:"none"} : {} }>
           <thead>
             <tr>
               <th>User id</th>
